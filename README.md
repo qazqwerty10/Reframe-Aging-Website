@@ -1,14 +1,15 @@
 # Reframe Aging Website
 
-Static website for Reframe Aging PLLC.
+Static website for Reframe Aging PLLC, currently positioned as the professional platform of Tim Nguyen, PT, DPT, GCS.
 
-## Deploy with Cloudflare Pages
+## Cloudflare Pages Settings
 
 - Framework preset: None
 - Build command: leave blank
 - Build output directory: `/`
-- Root directory: `/`
+- Root directory: leave blank
 
-## Local preview
+## Edit workflow
 
-Open `index.html` in a browser.
+Edit `index.html` for page content.
+Edit `styles.css` for design, color, spacing, and layout.
