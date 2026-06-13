@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights &mdash; Reframe Aging | Tim Nguyen, PT, DPT, GCS</title>
+<meta name="description" content="Original writing from Tim Nguyen, PT, DPT, GCS on physical capacity, healthy aging, fall prevention, and the science of living well. Evidence-informed perspectives from a board-certified Geriatric Clinical Specialist in Denver.">
+<link rel="canonical" href="https://reframeaging.com/insights/">
+<meta property="og:title" content="Insights — Reframe Aging">
+<meta property="og:description" content="Original writing on physical capacity, healthy aging, and the science of living well. From a board-certified Geriatric Clinical Specialist in Denver.">
+<meta property="og:url" content="https://reframeaging.com/insights/">
+<meta property="og:image" content="https://reframeaging.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"Reframe Aging Insights","description":"Original writing on physical capacity, healthy aging, and the science of living well.","url":"https://reframeaging.com/insights/","author":{"@type":"Person","name":"Tim Nguyen","honorificSuffix":"PT, DPT, GCS","url":"https://reframeaging.com/about.html"},"publisher":{"@type":"Organization","name":"Reframe Aging PLLC","url":"https://reframeaging.com"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../index.html">Reframe Aging</a>
+  <ul class="nav-links">
+    <li><a href="../start-here.html">Start Here</a></li>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../philosophy.html">Philosophy</a></li>
+    <li><a href="../work-with.html">Who I Work With</a></li>
+    <li><a href="../insights/" aria-current="page">Insights</a></li>
+    <li><a href="../reading.html">Reading</a></li>
+    <li><a href="../workshops.html">Workshops</a></li>
+  </ul>
+  <a class="nav-cta" href="../contact.html">Contact Tim</a>
+</nav>
+
+<div class="page-hero">
+  <div class="sec-eye">Insights</div>
+  <h1>Original writing on<br><em>aging well.</em></h1>
+  <p class="lead">Evidence-informed perspectives on physical capacity, healthy aging, and the science of living well &mdash; from a board-certified Geriatric Clinical Specialist in Denver, Colorado.</p>
+</div>
+
+<section style="padding:3rem 3rem 6rem;">
+
+  <div class="insights-grid">
+
+    <a class="article-card" href="the-capacity-principle.html">
+      <div class="article-tag">Framework</div>
+      <h3>The Capacity Principle: Why the Gap Between Capacity and Demand Is the Variable That Matters Most</h3>
+      <p>Most physical decline attributed to aging is not an inevitable feature of getting older. It is a consequence of a gap &mdash; between the physical reserve a person has built and the demands life places on that reserve.</p>
+      <div class="article-meta">Tim Nguyen, PT, DPT, GCS &middot; June 2025 &middot; 8 min read</div>
+    </a>
+
+    <div class="article-card placeholder">
+      <div class="article-tag">Longevity</div>
+      <h3>Why Strength Matters More Than Age</h3>
+      <p>Muscle strength declines 8&ndash;17% per decade after 40. What the research says about why this matters more than most people realize &mdash; and what to do about it.</p>
+      <div class="article-meta">Coming soon</div>
+    </div>
+
+    <div class="article-card placeholder">
+      <div class="article-tag">Assessment</div>
+      <h3>Walking Speed and Independence: What Your Gait Tells You About the Decades Ahead</h3>
+      <p>Usual gait speed is one of the most powerful predictors of future health outcomes in older adults. Understanding what it measures and why it matters.</p>
+      <div class="article-meta">Coming soon</div>
+    </div>
+
+    <div class="article-card placeholder">
+      <div class="article-tag">Skill</div>
+      <h3>Getting Up From the Floor: The Most Important Physical Skill Most People Never Practice</h3>
+      <p>The ability to get up from the ground independently is associated with lower mortality and higher functional independence. A clinical perspective on why it matters and how to train it.</p>
+      <div class="article-meta">Coming soon</div>
+    </div>
+
+    <div class="article-card placeholder">
+      <div class="article-tag">Science</div>
+      <h3>Healthspan vs. Lifespan: The Distinction That Changes Everything</h3>
+      <p>We have become very good at extending how long people live. We have been slower to focus on how well they live. The case for making healthspan the primary clinical goal.</p>
+      <div class="article-meta">Coming soon</div>
+    </div>
+
+    <div class="article-card placeholder">
+      <div class="article-tag">Prevention</div>
+      <h3>Falls Are Not Inevitable: A Clinical Framework for Understanding and Reducing Fall Risk</h3>
+      <p>Falls are the leading cause of injury in older adults &mdash; and most of them are preventable. What the evidence says about fall risk, and a proactive approach to addressing it.</p>
+      <div class="article-meta">Coming soon</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:4rem;padding:2rem;background:var(--bg-alt);border-radius:12px;max-width:560px;">
+    <div class="sec-eye" style="margin-bottom:0.5rem;">More coming</div>
+    <p style="font-size:0.87rem;color:var(--ink-mid);line-height:1.75;margin-bottom:1rem;">New articles are published when they are ready to be useful &mdash; not on a schedule. Subscribe to be notified when new writing goes up.</p>
+    <form class="newsletter-form" action="#" method="post" style="margin-top:0;">
+      <input type="email" name="email" placeholder="your@email.com" required>
+      <button type="submit">Notify me</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  <a class="footer-logo" href="../index.html">Reframe Aging</a>
+  <nav class="footer-nav">
+    <a href="../start-here.html" class="footer-link">Start Here</a>
+    <a href="../about.html" class="footer-link">About</a>
+    <a href="../philosophy.html" class="footer-link">Philosophy</a>
+    <a href="../work-with.html" class="footer-link">Who I Work With</a>
+    <a href="../insights/" class="footer-link">Insights</a>
+    <a href="../reading.html" class="footer-link">Reading</a>
+    <a href="../workshops.html" class="footer-link">Workshops</a>
+    <a href="../contact.html" class="footer-link">Contact</a>
+  </nav>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/timnguyen-pt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.instagram.com/reframeaging/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="mailto:tim@reframeaging.com">Email</a>
+  </div>
+  <span class="footer-text">&copy; 2025 Reframe Aging PLLC &middot; Denver, Colorado &middot; Tim Nguyen, PT, DPT, GCS</span>
+</footer>
+
+</body>
+</html>
