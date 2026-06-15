@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Tim Nguyen, PT, DPT, GCS &mdash; Reframe Aging | Denver, Colorado</title>
-<meta name="description" content="Tim Nguyen is a Doctor of Physical Therapy and Board-Certified Geriatric Clinical Specialist in Denver, Colorado. His practice focuses on physical capacity, healthy aging, fall prevention, and lifelong independence.">
+<title>About Tim Nguyen, PT, DPT, GCS &mdash; Why I Started Reframe Aging | Denver</title>
+<meta name="description" content="Tim Nguyen, PT, DPT, GCS founded Reframe Aging after recognizing that many limitations people associate with aging are not inevitable. The story behind the practice.">
 <link rel="canonical" href="https://reframeaging.com/about.html">
 <meta property="og:title" content="About Tim Nguyen, PT, DPT, GCS — Reframe Aging">
-<meta property="og:description" content="Board-certified Geriatric Clinical Specialist in Denver. Clinical background, credentials, and the story behind Reframe Aging.">
+<meta property="og:description" content="The story behind Reframe Aging — why Tim Nguyen, PT, DPT, GCS founded a practice built around capacity, resilience, and lifelong independence.">
 <meta property="og:url" content="https://reframeaging.com/about.html">
 <meta property="og:image" content="https://reframeaging.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -15,6 +15,92 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .about-hero {
+    padding: 6rem 3rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .about-hero-text .sec-eye { margin-bottom: 1rem; }
+  .about-hero-text h1 { margin-bottom: 1.25rem; }
+  .about-hero-text .lead {
+    font-size: 1.05rem;
+    color: var(--ink-mid);
+    line-height: 1.8;
+    max-width: 44ch;
+  }
+  .about-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--bg-alt);
+    border-radius: 16px;
+    border: 1px solid var(--divider);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  .photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--ink-muted);
+  }
+  .photo-placeholder-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fd);
+    font-size: 1.8rem;
+    color: var(--accent);
+  }
+  .photo-placeholder span {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .principle-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .principle-block {
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--divider);
+    border-radius: 10px;
+    border-top: 3px solid var(--accent);
+  }
+  .principle-block h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .principle-block p {
+    font-size: 0.83rem;
+    color: var(--ink-muted);
+    line-height: 1.65;
+  }
+  @media (max-width: 768px) {
+    .about-hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3.5rem 1.5rem; }
+    .about-photo { max-width: 280px; }
+    .principle-row { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
 
@@ -22,8 +108,7 @@
   <a class="nav-logo" href="index.html">Reframe Aging</a>
   <ul class="nav-links">
     <li><a href="start-here.html">Start Here</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="philosophy.html">Philosophy</a></li>
+    <li><a href="about.html" aria-current="page">About</a></li>
     <li><a href="work-with.html">Who I Work With</a></li>
     <li><a href="insights/">Insights</a></li>
     <li><a href="reading.html">Reading</a></li>
@@ -32,53 +117,124 @@
   <a class="nav-cta" href="contact.html">Contact Tim</a>
 </nav>
 
-<div class="page-hero">
-  <div class="sec-eye">About</div>
-  <h1>Tim Nguyen,<br><em>PT, DPT, GCS</em></h1>
-  <p class="lead">Doctor of Physical Therapy. Board-Certified Geriatric Clinical Specialist. Founder of Reframe Aging. Practicing in Denver, Colorado.</p>
-</div>
-
-<section class="about" style="padding-top:3rem;">
-  <div class="about-body">
-    <div class="prose">
-      <p>Tim is a Doctor of Physical Therapy and board-certified Geriatric Clinical Specialist &mdash; a credential held by fewer than 1% of licensed physical therapists &mdash; practicing in Denver, Colorado. His work spans orthopedic rehabilitation, strength development, balance and vestibular training, fall prevention, and proactive longevity-focused care across the full spectrum from acute recovery to lifelong capability.</p>
-
-      <p>He founded Reframe Aging after seeing the same pattern repeatedly: people attributing to aging what was actually the consequence of years without adequate physical reserve. The limitations were real. The cause was often not age itself, but the absence of deliberate intervention early enough to matter.</p>
-
-      <p>Clinically, Tim&rsquo;s approach is grounded in the understanding that exercise is the most powerful tool available for extending both lifespan and healthspan &mdash; and that building physical capacity proactively, rather than reactively, changes the trajectory of aging in ways that treatment after the fact cannot replicate. Most of what we fear about getting older is addressable. Most of it starts earlier than we think.</p>
-
-      <h2>Research &amp; Education</h2>
-      <p>Tim co-authored research on Geriatric Functional Milestones (GFMs) &mdash; a clinical framework proposing that routine movement assessment across the lifespan can identify suboptimal patterns before pathological onset, enabling proactive rather than reactive intervention.</p>
-
-      <p>Outside of patient care, he mentors physical therapy students, leads community education programs in Denver, and continues advanced training in vestibular rehabilitation, osteoporosis management, and longevity science. He is particularly interested in the responsible application of emerging longevity research to clinical physical therapy practice.</p>
-
-      <h2>The Clinical Approach</h2>
-      <p>Reframe Aging is not a traditional rehabilitation clinic. It is a practice built around a single organizing question: what physical capacity does this person need to thrive &mdash; not just today, but ten and twenty years from now? Every clinical decision flows from that question.</p>
-
-      <p>This means Tim works differently from most PTs. Sessions are longer and more deliberate. Assessment goes deeper than the presenting complaint. Goals are oriented toward function over time, not just symptom resolution. The measure of success is not whether you feel better after six weeks &mdash; it is whether you are more capable, more resilient, and better positioned for the decades ahead.</p>
-
-      <p>For clinicians and students interested in this model: Tim is actively engaged in mentorship and education around geriatric physical therapy, the Capacity Principle, and building clinical practices that address the full continuum of aging. Reach out directly.</p>
+<!-- HERO -->
+<div class="about-hero">
+  <div class="about-hero-text">
+    <div class="sec-eye">About</div>
+    <h1>Tim Nguyen,<br><em>PT, DPT, GCS</em></h1>
+    <p class="lead">Helping people build the capacity to remain active, independent, and engaged throughout life. Practicing in Denver, Colorado.</p>
+  </div>
+  <div class="about-photo">
+    <!-- Replace with: <img src="headshot.jpg" alt="Tim Nguyen, PT, DPT, GCS"> -->
+    <div class="photo-placeholder">
+      <div class="photo-placeholder-circle">TN</div>
+      <span>Photo coming soon</span>
     </div>
   </div>
-  <div class="about-creds">
-    <div class="sec-eye" style="margin-bottom:1rem;">Credentials</div>
-    <div class="cred-item"><div class="cred-dot"></div><div class="cred-text"><strong>Doctor of Physical Therapy (DPT)</strong><span>Advanced clinical training in orthopedics, neurology, geriatrics, and rehabilitation</span></div></div>
-    <div class="cred-item"><div class="cred-dot"></div><div class="cred-text"><strong>Board-Certified Geriatric Clinical Specialist (GCS)</strong><span>Specialty credential held by fewer than 1% of licensed physical therapists in the US</span></div></div>
-    <div class="cred-item"><div class="cred-dot"></div><div class="cred-text"><strong>Vestibular Rehabilitation &amp; Fall Prevention</strong><span>Advanced training in balance disorders, BPPV, dizziness, and fall risk reduction</span></div></div>
-    <div class="cred-item"><div class="cred-dot"></div><div class="cred-text"><strong>Geriatric Functional Milestones Research</strong><span>Co-author of published research on proactive movement screening in older adults</span></div></div>
-    <div class="cred-item"><div class="cred-dot"></div><div class="cred-text"><strong>Osteoporosis &amp; Bone Health</strong><span>Specialized training in exercise for bone density, safe loading, and fracture risk reduction</span></div></div>
-    <div class="cred-item"><div class="cred-dot"></div><div class="cred-text"><strong>Community Educator &amp; Mentor</strong><span>Healthy aging workshops, PT student mentorship, and community education in Denver</span></div></div>
-    <div style="margin-top:2rem;padding:1.25rem 1.5rem;background:var(--accent-pale);border:1px solid var(--accent-light);border-radius:10px;">
-      <div class="sec-eye" style="margin-bottom:0.5rem;">For Clinicians &amp; Students</div>
-      <p style="font-size:0.85rem;color:var(--ink-mid);line-height:1.7;margin-bottom:1rem;">Interested in geriatric physical therapy, the Capacity Principle framework, or mentorship in healthy aging practice? Tim is engaged in education and welcomes conversation with students and early-career clinicians.</p>
-      <a class="btn-ghost" href="contact.html">Get in touch</a>
+</div>
+
+<hr class="rule">
+
+<!-- STORY -->
+<section style="padding:5rem 3rem;">
+  <div class="two-col" style="align-items:start;">
+
+    <div class="prose">
+      <div class="sec-eye" style="margin-bottom:1rem;">Why I Started Reframe Aging</div>
+
+      <p>I did not start Reframe Aging because I was interested in aging.</p>
+
+      <p>I started it because I was interested in why some people continue doing the things they love well into later life while others gradually lose the ability to do them.</p>
+
+      <p>Throughout my training and clinical practice, I met adults who remained active, curious, engaged, and independent into their seventies, eighties, and beyond. I also met people who felt their world becoming smaller long before they expected.</p>
+
+      <p>The difference was often not age itself.</p>
+
+      <p>It was capacity.</p>
+
+      <p>The ability to move confidently, recover from setbacks, adapt to challenges, participate in meaningful activities, and remain connected to the people and communities that matter.</p>
+
+      <p>Reframe Aging grew from a simple belief: aging is inevitable, but many of the limitations we associate with aging are not. My goal is to help people build and preserve the physical, cognitive, and social reserves that allow them to continue living fully throughout life.</p>
+
+      <blockquote>
+        <p>The goal of aging well is not simply to live longer. It is to continue living fully.</p>
+      </blockquote>
+
+      <p>That idea continues to guide how I practice, teach, and think about healthy aging.</p>
+
+      <hr>
+
+      <div class="sec-eye" style="margin-bottom:1rem;">Beyond the Clinic</div>
+
+      <p>I am a lifelong foodie, enthusiastic home cook, and perpetual collector of new experiences. My wife and I moved to Denver in 2023 and continue to explore Colorado one recommendation at a time &mdash; whether it is a neighborhood restaurant, a weekend trip, a ski day, or a trail that does not require summiting a 14er.</p>
+
+      <p>One of the unexpected gifts of working with aging adults is the opportunity to learn from a lifetime of experiences, stories, and wisdom. Every person has a unique perspective shaped by where they have been, what they have overcome, and what they value most. Those conversations are a constant reminder that aging well is about far more than physical health. It is about continuing to grow, contribute, connect, and find meaning throughout life.</p>
+
+      <hr>
+
+      <div class="sec-eye" style="margin-bottom:1rem;">How I Work</div>
+
+      <p>My work spans recovery, strength development, balance and vestibular rehabilitation, fall prevention, and healthy aging. Rather than focusing only on today's symptoms, I try to understand what people want to continue doing in the years ahead &mdash; and help them build the capacity to get there.</p>
+
+      <p>Clinical care is currently provided at <a href="https://milehighphysicaltherapy.com" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;">Mile High Physical Therapy &amp; Balance Centers</a> in Lowry, Colorado.</p>
+
+      <hr>
+
+      <div class="sec-eye" style="margin-bottom:1rem;">Ideas That Influence My Work</div>
+
+      <p>The ideas that most influence how I practice sit at the intersection of movement science, healthy aging research, and the broader question of what makes a life go well across the full arc of time. I am interested in the evidence on physical capacity and its relationship to independence, the role of environment and community in supporting thriving, the psychology of resilience and self-efficacy, and what clinical practice looks like when it takes the long view.</p>
+
+      <p>A longer reading list is on the <a href="reading.html" style="color:var(--accent);text-decoration:none;">Reading page</a>.</p>
+
     </div>
+
+    <!-- CREDENTIALS SIDEBAR -->
+    <div>
+      <div class="sec-eye" style="margin-bottom:1rem;">Credentials</div>
+      <div class="about-creds">
+        <div class="cred-item">
+          <div class="cred-dot"></div>
+          <div class="cred-text">
+            <strong>Doctor of Physical Therapy (DPT)</strong>
+            <span>Advanced clinical training in orthopedics, neurology, geriatrics, and rehabilitation</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-dot"></div>
+          <div class="cred-text">
+            <strong>Board-Certified Geriatric Clinical Specialist (GCS)</strong>
+            <span>Specialty credential held by fewer than 1% of licensed physical therapists in the US</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-dot"></div>
+          <div class="cred-text">
+            <strong>Vestibular Rehabilitation &amp; Fall Prevention</strong>
+            <span>Advanced training in balance disorders, BPPV, dizziness, and fall risk reduction</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-dot"></div>
+          <div class="cred-text">
+            <strong>Community Educator &amp; Mentor</strong>
+            <span>Workshops, PT student mentorship, and community education in Denver</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;padding:1.25rem 1.5rem;background:var(--accent-pale);border:1px solid var(--accent-light);border-radius:10px;">
+        <div class="sec-eye" style="margin-bottom:0.5rem;">For Clinicians &amp; Students</div>
+        <p style="font-size:0.85rem;color:var(--ink-mid);line-height:1.7;margin-bottom:1rem;">Interested in geriatric PT, the Capacity Principle, or mentorship in healthy aging practice? Tim welcomes conversation with students and early-career clinicians.</p>
+        <a class="btn-ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <section class="contact">
   <div class="sec-eye" style="color:rgba(255,255,255,0.7);text-align:center;margin-bottom:1.25rem">Connect</div>
-  <h2>Questions, referrals, or<br>just a conversation.</h2>
+  <h2>Questions, referrals,<br>or just a conversation.</h2>
   <p>Tim responds personally to every message. Reach out about care, collaboration, education, or anything else.</p>
   <a class="btn-primary" href="mailto:tim@reframeaging.com">Contact Tim &rarr;</a>
 </section>
@@ -88,7 +244,6 @@
   <nav class="footer-nav">
     <a href="start-here.html" class="footer-link">Start Here</a>
     <a href="about.html" class="footer-link">About</a>
-    <a href="philosophy.html" class="footer-link">Philosophy</a>
     <a href="work-with.html" class="footer-link">Who I Work With</a>
     <a href="insights/" class="footer-link">Insights</a>
     <a href="reading.html" class="footer-link">Reading</a>
