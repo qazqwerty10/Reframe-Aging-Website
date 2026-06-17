@@ -87,6 +87,11 @@ p { color: var(--ink-mid); line-height: 1.8; }
 .brand-bar { background: var(--accent); padding: 1.25rem 3rem; text-align: center; }
 .brand-bar p { font-family: var(--fd); font-size: clamp(1rem, 1.6vw, 1.3rem); color: #fff; font-style: italic; line-height: 1.5; max-width: 82ch; margin: 0 auto; opacity: 0.95; }
 
+.credibility-strip { background: var(--bg-alt); border-top: 1px solid var(--divider); border-bottom: 1px solid var(--divider); padding: 1.75rem 3rem; text-align: center; }
+.cred-line { font-size: 0.92rem; color: var(--ink-mid); line-height: 1.7; max-width: 74ch; margin: 0 auto 0.85rem; }
+.cred-highlights { display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap; }
+.cred-highlights span { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); background: var(--accent-pale); border: 1px solid var(--accent-light); border-radius: 999px; padding: 0.35rem 0.85rem; }
+
 /* ── HERO (homepage) ── */
 .hero { min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 5rem 3rem 4rem; gap: 4rem; overflow: hidden; }
 .hero-content { position: relative; z-index: 2; }
@@ -295,6 +300,7 @@ footer { background: var(--dark); border-top: 1px solid var(--dark-border); padd
   .hero { grid-template-columns: 1fr; min-height: auto; padding: 3.5rem 1.5rem; gap: 2.5rem; }
   .hero-visual { display: none; }
   .brand-bar { padding: 1.1rem 1.5rem; }
+  .credibility-strip { padding: 1.5rem 1.5rem; }
   .pillars-grid, .reading-grid, .who-grid { grid-template-columns: 1fr; }
   .ws-grid { grid-template-columns: 1fr; }
   .cont-row { grid-template-columns: 1fr; }
