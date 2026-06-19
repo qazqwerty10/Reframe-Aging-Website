@@ -407,11 +407,37 @@ hr.rule { border: 0; height: 24px; width: 140px; margin: 3.5rem auto; background
 .gonio-metric { font-family: var(--fd); font-size: 46px; fill: var(--ink); }
 .gonio-sub { font-family: var(--fb); font-size: 10px; fill: var(--ink-muted); letter-spacing: .12em; }
 .gonio-tlbl { font-family: var(--fb); font-size: 9px; fill: var(--ink-muted); letter-spacing: .08em; }
+.gonio-embed { width: 300px; height: 300px; max-width: 100%; margin: 0 auto; }
+.gonio-embed svg { width: 100%; height: 100%; }
 @media (prefers-reduced-motion: no-preference) {
-  .gonio-arc { stroke-dashoffset: 325; animation: gonioDraw 2.2s cubic-bezier(.33,0,.2,1) .3s forwards; }
-  .gonio-arm { transform: rotate(0deg); animation: gonioSweep 2.2s cubic-bezier(.33,0,.2,1) .3s forwards; }
-  .gonio-halo { animation: gonioHalo 3s ease-in-out 2.7s infinite; }
+  .play .gonio-arc { stroke-dashoffset: 325; animation: gonioDraw 2.2s cubic-bezier(.33,0,.2,1) .1s forwards; }
+  .play .gonio-arm { transform: rotate(0deg); animation: gonioSweep 2.2s cubic-bezier(.33,0,.2,1) .1s forwards; }
+  .play .gonio-halo { animation: gonioHalo 3s ease-in-out 2.5s infinite; }
 }
+
+/* Reserve-line hero (homepage) */
+.rh-wrap { width: 360px; height: 300px; max-width: 100%; }
+.rh-wrap svg { width: 100%; height: 100%; }
+.rh { width: 100%; height: 100%; }
+.rh-demand { fill: none; stroke: var(--ink-muted); stroke-width: 1.4; stroke-dasharray: 2 6; stroke-linecap: round; opacity: 1; }
+.rh-fill { fill: var(--accent); opacity: .10; }
+.rh-reserve { fill: none; stroke: var(--accent); stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 100; stroke-dashoffset: 0; }
+.rh-node { fill: var(--bg); stroke: var(--ink); stroke-width: 1.8; opacity: 1; }
+.rh-halo { fill: var(--accent); opacity: 0; }
+.rh-lbl { font-family: var(--fb); fill: var(--ink-muted); letter-spacing: .14em; font-size: 9px; text-transform: uppercase; opacity: .6; }
+@media (prefers-reduced-motion: no-preference) {
+  .rh-demand { opacity: 0; animation: rhFull .6s ease .1s forwards; }
+  .rh-reserve { stroke-dashoffset: 100; animation: rhDraw 2.2s cubic-bezier(.4,0,.2,1) .4s forwards; }
+  .rh-fill { opacity: 0; animation: rhFill 1s ease 2.1s forwards; }
+  .rh-node { opacity: 0; animation: rhFull .4s ease 2.5s forwards; }
+  .rh-halo { animation: rhHalo 3s ease-in-out 2.8s infinite; }
+  .rh-lbl { opacity: 0; animation: rhLbl .8s ease 2.6s forwards; }
+}
+@keyframes rhDraw { to { stroke-dashoffset: 0; } }
+@keyframes rhFull { to { opacity: 1; } }
+@keyframes rhFill { to { opacity: .10; } }
+@keyframes rhLbl { to { opacity: .6; } }
+@keyframes rhHalo { 0%, 100% { opacity: 0; } 50% { opacity: .24; } }
 @keyframes gonioDraw { to { stroke-dashoffset: 0; } }
 @keyframes gonioSweep { from { transform: rotate(0deg); } to { transform: rotate(-120deg); } }
 @keyframes gonioHalo { 0%, 100% { opacity: 0; } 50% { opacity: .26; } }
