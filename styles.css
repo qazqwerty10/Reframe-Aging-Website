@@ -381,3 +381,37 @@ footer { background: var(--dark); border-top: 1px solid var(--dark-border); padd
   .insights-grid { grid-template-columns: 1fr; }
   .article-hero, .article-meta-bar, .article-body { padding-left: 1.5rem; padding-right: 1.5rem; }
 }
+
+/* === Brand wiring: logo lockups, hero goniometer, reserve divider === */
+.nav-logo { display: inline-flex; align-items: center; }
+.nav-logo svg { height: 30px; width: auto; display: block; }
+.footer-logo { display: inline-flex; align-items: center; }
+.footer-logo svg { height: 26px; width: auto; display: block; }
+
+/* Reserve-line divider — the recurring brand motif on every .rule */
+hr.rule { border: 0; height: 24px; width: 140px; margin: 3.5rem auto; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 24"><line x1="2" y1="14" x2="116" y2="14" stroke="%23D9D5CC" stroke-width="1.1"/><path d="M116 14 C128 14 133 11 138 7" fill="none" stroke="%234E7A5F" stroke-width="1.4" stroke-linecap="round"/></svg>') no-repeat center / contain; }
+
+/* Hero goniometer (Range of Motion) */
+.gonio { width: 100%; height: 100%; }
+.gonio-field { fill: none; stroke: var(--divider); stroke-width: 1; }
+.gonio-fielddot { fill: none; stroke: var(--divider); stroke-width: 1; stroke-dasharray: 3 7; opacity: .7; }
+.gonio-fixed { stroke: var(--ink-muted); stroke-width: 2; stroke-linecap: round; opacity: .5; }
+.gonio-tick { stroke: var(--ink-muted); stroke-width: 1.4; stroke-linecap: round; opacity: .55; }
+.gonio-arc { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 325; stroke-dashoffset: 0; }
+.gonio-arm { transform-box: view-box; transform-origin: 130px 240px; transform: rotate(-120deg); }
+.gonio-armline { stroke: var(--ink); stroke-width: 2.4; stroke-linecap: round; }
+.gonio-hub { fill: var(--ink); }
+.gonio-hubring { fill: none; stroke: var(--accent); stroke-width: 1.4; }
+.gonio-dot { fill: var(--accent); stroke: var(--bg); stroke-width: 2; }
+.gonio-halo { fill: var(--accent); opacity: 0; }
+.gonio-metric { font-family: var(--fd); font-size: 46px; fill: var(--ink); }
+.gonio-sub { font-family: var(--fb); font-size: 10px; fill: var(--ink-muted); letter-spacing: .12em; }
+.gonio-tlbl { font-family: var(--fb); font-size: 9px; fill: var(--ink-muted); letter-spacing: .08em; }
+@media (prefers-reduced-motion: no-preference) {
+  .gonio-arc { stroke-dashoffset: 325; animation: gonioDraw 2.2s cubic-bezier(.33,0,.2,1) .3s forwards; }
+  .gonio-arm { transform: rotate(0deg); animation: gonioSweep 2.2s cubic-bezier(.33,0,.2,1) .3s forwards; }
+  .gonio-halo { animation: gonioHalo 3s ease-in-out 2.7s infinite; }
+}
+@keyframes gonioDraw { to { stroke-dashoffset: 0; } }
+@keyframes gonioSweep { from { transform: rotate(0deg); } to { transform: rotate(-120deg); } }
+@keyframes gonioHalo { 0%, 100% { opacity: 0; } 50% { opacity: .26; } }
