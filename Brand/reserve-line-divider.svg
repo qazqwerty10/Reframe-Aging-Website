@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 24" role="img" aria-labelledby="t">
+  <title id="t">Reframe Aging section divider</title>
+  <line x1="4" y1="16" x2="292" y2="16" stroke="#D9D5CC" stroke-width="1"/>
+  <path d="M4 16 L290 16 C 304 16, 310 13, 316 8" fill="none" stroke="#4E7A5F" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="t">
+  <title id="t">Reframe Aging</title>
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&amp;display=swap');</style>
+  </defs>
+  <text x="50" y="56" font-family="'Cinzel', Georgia, serif" font-weight="600" font-size="38" letter-spacing="1" fill="#1C2B22" text-anchor="middle">RA</text>
+  <path d="M22 78 C 48 76, 64 70, 82 58" fill="none" stroke="#4E7A5F" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
