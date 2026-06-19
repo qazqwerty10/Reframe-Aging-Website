@@ -51,7 +51,7 @@
   <div class="hero-content">
     <div class="eyebrow">Denver, Colorado &middot; PT &middot; DPT &middot; GCS</div>
     <h1>Build the capacity to keep life <em>expansive.</em></h1>
-    <p class="hero-sub">Reframe Aging is the professional platform of Tim Nguyen, PT, DPT, GCS &mdash; a board-certified Geriatric Clinical Specialist in Denver helping adults build the physical capacity, resilience, and independence needed to thrive throughout life. Most of what gets blamed on age is not actually inevitable. It can be built back.</p>
+    <p class="hero-sub">Reframe Aging helps adults build the physical capacity, confidence, and resilience needed to keep doing what matters throughout life. Most of what gets blamed on age is not actually inevitable. It can be built back.</p>
     <div class="btn-actions">
       <a class="btn-primary" href="about.html">Meet Tim</a>
       <a class="btn-ghost" href="start-here.html">Where to begin</a>
@@ -59,27 +59,15 @@
     <p class="hero-cred">Tim Nguyen, PT, DPT, GCS &middot; Board-Certified Geriatric Clinical Specialist &middot; Denver, Colorado</p>
   </div>
   <div class="hero-visual" aria-hidden="true">
-    <div class="arc-wrap">
-      <svg class="gonio" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Range of motion measured at 120 degrees">
-        <circle class="gonio-fielddot" cx="130" cy="240" r="186"/>
-        <path class="gonio-field" d="M285 240 A155 155 0 0 0 52.5 105.8"/>
-        <line class="gonio-fixed" x1="130" y1="240" x2="285" y2="240"/>
-        <line class="gonio-tick" x1="285" y1="240" x2="296" y2="240"/>
-        <line class="gonio-tick" x1="264.2" y1="162.5" x2="273.8" y2="157"/>
-        <line class="gonio-tick" x1="207.5" y1="105.8" x2="213" y2="96.2"/>
-        <line class="gonio-tick" x1="130" y1="85" x2="130" y2="74"/>
-        <line class="gonio-tick" x1="52.5" y1="105.8" x2="47" y2="96.2"/>
-        <path class="gonio-arc" d="M285 240 A155 155 0 0 0 52.5 105.8"/>
-        <text class="gonio-tlbl" x="300" y="243" font-size="9" fill="#7A8C80">0&deg;</text>
-        <g class="gonio-arm">
-          <line class="gonio-armline" x1="130" y1="240" x2="285" y2="240"/>
-          <circle class="gonio-halo" cx="285" cy="240" r="11"/>
-          <circle class="gonio-dot" cx="285" cy="240" r="5.5"/>
-        </g>
-        <text class="gonio-metric" id="romValue" x="186" y="190" text-anchor="middle" fill="#1C2B22">120&deg;</text>
-        <text class="gonio-sub" x="188" y="212" text-anchor="middle" fill="#7A8C80">RANGE OF MOTION</text>
-        <circle class="gonio-hubring" cx="130" cy="240" r="9"/>
-        <circle class="gonio-hub" cx="130" cy="240" r="4"/>
+    <div class="rh-wrap">
+      <svg class="rh" viewBox="0 0 360 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A constant demand line with a reserve line rising above it">
+        <path class="rh-fill" d="M30 215 L180 211 C 250 207 300 175 332 78 L332 219 L30 219 Z"/>
+        <line class="rh-demand" x1="30" y1="219" x2="332" y2="219"/>
+        <path class="rh-reserve" pathLength="100" d="M30 215 L180 211 C 250 207 300 175 332 78"/>
+        <circle class="rh-halo" cx="332" cy="78" r="11"/>
+        <circle class="rh-node" cx="332" cy="78" r="5"/>
+        <text class="rh-lbl" x="34" y="234">demand</text>
+        <text class="rh-lbl" x="332" y="64" text-anchor="end">capacity</text>
       </svg>
     </div>
   </div>
@@ -235,15 +223,5 @@
   <span class="footer-text">&copy; 2025 Reframe Aging PLLC &middot; Denver, Colorado &middot; Tim Nguyen, PT, DPT, GCS</span>
 </footer>
 
-<script>
-(function(){
-  var el=document.getElementById('romValue'); if(!el) return;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){el.textContent='120\u00B0';return;}
-  var start=null,dur=2200,delay=300;
-  function ease(t){return 1-Math.pow(1-t,3);}
-  function step(ts){if(!start)start=ts;var e=ts-start-delay;if(e<0){requestAnimationFrame(step);return;}var t=Math.min(e/dur,1);el.textContent=Math.round(120*ease(t))+'\u00B0';if(t<1)requestAnimationFrame(step);else el.textContent='120\u00B0';}
-  el.textContent='0\u00B0';requestAnimationFrame(step);
-})();
-</script>
 </body>
 </html>
