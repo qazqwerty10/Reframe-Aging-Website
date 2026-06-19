@@ -441,3 +441,194 @@ hr.rule { border: 0; height: 24px; width: 140px; margin: 3.5rem auto; background
 @keyframes gonioDraw { to { stroke-dashoffset: 0; } }
 @keyframes gonioSweep { from { transform: rotate(0deg); } to { transform: rotate(-120deg); } }
 @keyframes gonioHalo { 0%, 100% { opacity: 0; } 50% { opacity: .26; } }
+
+/* =========================
+   Mobile Responsiveness
+   Reframe Aging
+   ========================= */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent long words/URLs from breaking layout */
+p,
+li,
+h1,
+h2,
+h3,
+a {
+  overflow-wrap: break-word;
+}
+
+/* Tablet and smaller */
+@media (max-width: 900px) {
+  nav {
+    padding: 1rem 1.25rem;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .nav-logo,
+  .site-logo {
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    gap: 0.85rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .nav-links a {
+    font-size: 0.72rem;
+  }
+
+  .nav-cta {
+    font-size: 0.72rem;
+    padding: 0.65rem 0.9rem;
+  }
+
+  section,
+  .section,
+  .page-section {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .two-col,
+  .hero-grid,
+  .split,
+  .content-grid,
+  .cards,
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .reserve-divider {
+    max-width: 420px;
+    margin: 3rem auto;
+  }
+}
+
+/* Phone */
+@media (max-width: 640px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.9rem;
+    padding: 0.75rem 0 0;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  .nav-cta {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 12vw, 3.25rem) !important;
+    line-height: 1.02 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 9vw, 2.5rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  h3 {
+    font-size: 1.15rem !important;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .lead,
+  .sub,
+  .intro {
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .hero,
+  .page-hero,
+  .about-hero {
+    padding: 3.5rem 1.5rem 3rem !important;
+  }
+
+  .hero svg,
+  .capacity-graphic,
+  .reserve-graphic {
+    margin-top: 2rem;
+  }
+
+  .card,
+  .service-card,
+  .insight-card,
+  .principle-block {
+    padding: 1.35rem !important;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1.25rem;
+  }
+
+  footer {
+    padding: 2.5rem 1.5rem !important;
+    text-align: center;
+  }
+
+  .footer-nav,
+  .footer-social {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 420px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost {
+    width: 100%;
+    text-align: center;
+  }
+
+  .reserve-divider {
+    max-width: 280px;
+  }
+}
