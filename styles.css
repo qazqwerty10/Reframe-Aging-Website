@@ -276,6 +276,15 @@ p { color: var(--ink-mid); line-height: 1.8; }
 .contact .btn-primary:hover { background: var(--ink); color: #fff; }
 
 /* ── FOOTER ── */
+/* ── SEO FOOTER STRIP (services + areas served) ── */
+.seo-strip { background: var(--bg-alt); border-top: 1px solid var(--divider); padding: 2.5rem 3rem; }
+.seo-strip-inner { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+.seo-strip .sec-eye { margin-bottom: 0.6rem; }
+.seo-strip p { font-size: 0.82rem; color: var(--ink-muted); line-height: 1.8; }
+.seo-strip a { color: var(--accent); text-decoration: none; }
+.seo-strip a:hover { text-decoration: underline; }
+@media (max-width: 720px) { .seo-strip-inner { grid-template-columns: 1fr; gap: 1.75rem; } }
+
 footer { background: var(--dark); border-top: 1px solid var(--dark-border); padding: 2rem 3rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
 .footer-logo { font-family: var(--fd); font-size: 0.95rem; color: var(--dark-text); text-decoration: none; }
 .footer-nav { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
@@ -462,3 +471,5 @@ hr.rule { border: 0; height: 24px; width: 140px; margin: 3.5rem auto; background
   /* inline grid-template-columns beats stylesheet specificity — force single column */
   .who-grid, .resp-grid { grid-template-columns: 1fr !important; }
 }
+
+@media (max-width: 720px) { .seo-strip { padding: 2rem 1.5rem; } }
