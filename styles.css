@@ -61,6 +61,7 @@ nav {
 .nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a { font-size: 0.74rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent); }
+.nav-links .nav-contact-only { display: none; }
 .nav-cta { font-size: 0.78rem; font-weight: 500; color: var(--surface); background: var(--ink); padding: 0.45rem 1.1rem; border-radius: 2rem; text-decoration: none; transition: background 0.2s; }
 .nav-cta:hover { background: var(--accent); }
 
@@ -399,6 +400,8 @@ footer { background: var(--dark); border-top: 1px solid var(--dark-border); padd
 
 /* Reserve-line divider — the recurring brand motif on every .rule */
 hr.rule { border: 0; height: 24px; width: 140px; margin: 3.5rem auto; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 24"><line x1="2" y1="14" x2="116" y2="14" stroke="%23D9D5CC" stroke-width="1.1"/><path d="M116 14 C128 14 133 11 138 7" fill="none" stroke="%234E7A5F" stroke-width="1.4" stroke-linecap="round"/></svg>') no-repeat center / contain; }
+hr.rule-signature { border: 0; height: 40px; width: min(1080px, 88%); margin: 4rem auto; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40"><path d="M0 29 L 84 28 C 138 27, 168 23, 196 5 L 196 29 Z" fill="%234E7A5F" fill-opacity="0.10"/><path d="M0 29 L 84 28 C 138 27, 168 23, 196 5" fill="none" stroke="%234E7A5F" stroke-width="2.6" stroke-linecap="round"/><circle cx="196" cy="5" r="3" fill="%23F7F6F3" stroke="%231C2B22" stroke-width="1.6"/></svg>') no-repeat right center / 200px 40px, repeating-linear-gradient(to right, var(--ink-muted) 0 2px, transparent 2px 8px) no-repeat left 72% / 100% 1.5px; }
+@media (max-width: 600px) { hr.rule-signature { height: 34px; width: 90%; margin: 3rem auto; background-size: 168px 34px, 100% 1.5px; } }
 
 /* Hero goniometer (Range of Motion) */
 .gonio { width: 100%; height: 100%; }
@@ -456,14 +459,15 @@ hr.rule { border: 0; height: 24px; width: 140px; margin: 3.5rem auto; background
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; margin: 4px 0; transition: transform .25s ease, opacity .2s ease; }
 
 @media (max-width: 768px) {
-  nav { flex-wrap: wrap; }
-  .nav-toggle { display: block; order: 3; }
-  .nav-cta { order: 2; margin-left: auto; margin-right: .25rem; }
+  nav { flex-wrap: wrap; height: auto; min-height: 60px; padding: 0.65rem 1.5rem; }
+  .nav-toggle { display: block; order: 3; margin-left: auto; }
+  .nav-cta { display: none; }
   .nav-links { order: 4; flex-basis: 100%; }
   /* override the base hidden state only when menu is open */
   nav.open .nav-links { display: flex; flex-direction: column; gap: 0; margin-top: .75rem; }
   nav.open .nav-links li { border-top: 1px solid var(--divider); }
   nav.open .nav-links a { display: block; padding: .9rem .25rem; font-size: .95rem; }
+  nav.open .nav-links .nav-contact-only { display: block; }
   nav.open .nav-toggle span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
   nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
   nav.open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
